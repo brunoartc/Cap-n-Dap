@@ -59,8 +59,11 @@ public class clckScript : MonoBehaviour
         if (currentCPS * 1.20f > targerCPS)
         {
             CPSText.color = Color.yellow;
-        } else if (currentCPS > targerCPS)
+        }
+        
+        if (currentCPS > targerCPS)
         {
+
             PlayerPrefs.SetInt("points", PlayerPrefs.GetInt("points") + 1);
             PlayerPrefs.SetInt("won_0" , 1);
             SceneManager.LoadScene("cenario");

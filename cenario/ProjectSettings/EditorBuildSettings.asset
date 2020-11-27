@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HammerIt.unity
     guid: 016adc00958cdad47ab59d2bab67cbe4
+  - enabled: 1
+    path: Assets/Scenes/Burger.unity
+    guid: 147aed066555a394baf26297b9e7bcbc
   m_configObjects: {}

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MouseMove2D : MonoBehaviour
 {
@@ -43,6 +44,10 @@ public class MouseMove2D : MonoBehaviour
             if (points >= totalHair) {
                 win.SetText("You Win");
                 Debug.Log($"You Win {points}");
+                PlayerPrefs.SetInt("points", PlayerPrefs.GetInt("points") + 1);
+                PlayerPrefs.SetInt("won_2", 1);
+                SceneManager.LoadScene("cenario");
+                
             }
         } else
         {
